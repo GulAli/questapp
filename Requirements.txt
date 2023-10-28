@@ -1,0 +1,43 @@
+/**************************************************************************
+- Requirements -
+Users should be able to sign up.
+Users should be able to log in.
+Users should be able to post.
+Users should be able to comment on a post.
+Users should be able to like a post.
+
+System should push notifications.
+System should be available 7/24 with less than 1% down.
+
+/**************************************************************************
+- API Design -
+
+./users                                             - Users API is an end-point that we reach all users.
+./users/{userId}                                    - Users API is an end-point that we reach a specific user.
+./users/{userId}/profile
+
+./post                                              - Post API is an end-point that we reach all posts.
+./post?user={userId}                                - Post API is an end-point that we reach a specific post by user.
+./post/{postId}                                     - Post API is an end-point that we reach a specific post.
+
+./comments                                          - Comments API is an end-point that we reach all comments.
+./comments?postId={postId}                          - Comments API is an end-point that we reach a specific comment by post.
+./comments?USER={userId}                            - Comments API is an end-point that we reach a specific comment by user.
+./comments/{commentId}                              - Comments API is an end-point that we reach a specific comment.
+
+./likes                                             - Likes API is an end-point that we reach all likes.
+./likes?postId={postId}                             - Likes API is an end-point that we reach a specific likes by post.
+./likes?user={userId}                               - Likes API is an end-point that we reach a specific likes by user.
+./likes/{likeId}                                    - Likes API is an end-point that we reach a specific like.
+
+/**************************************************************************
+- Security Desing - 
+Sign up, login, etc.
+
+/**************************************************************************
+Controllers are classes that includes methods which response requests by frontend.
+For example, when someone types "./posts", we give response to this request in controllers.
+- To Do -
+1. Redundent?
+2. Endpoint?
+3. Data base queries?
