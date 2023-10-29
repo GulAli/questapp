@@ -44,6 +44,16 @@ import lombok.Data;
     5. We use "JsonIgnore" annotation not to get in a trouble
     with serialization.
 
+    6. Adding a new post for a specific user in Postman:
+    POST Request -> http://localhost:8080/posts
+
+    {
+    "id": 1,
+    "title": "ttt",
+    "text": "abcdffg",
+    "userId": 1
+}
+
 
 **********************************************/ 
 
