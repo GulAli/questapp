@@ -22,7 +22,8 @@ System should be available 7/24 with less than 1% down.
 
 ./comments                                          - Comments API is an end-point that we reach all comments.
 ./comments?postId={postId}                          - Comments API is an end-point that we reach a specific comment by post.
-./comments?USER={userId}                            - Comments API is an end-point that we reach a specific comment by user.
+./comments?userId={userId}                          - Comments API is an end-point that we reach a specific comment by user.
+./comments?postId={postId}&userId={userId}          - Comments API is an end-point that we reach a specific comment by post and user.
 ./comments/{commentId}                              - Comments API is an end-point that we reach a specific comment.
 
 ./likes                                             - Likes API is an end-point that we reach all likes.
@@ -41,3 +42,4 @@ For example, when someone types "./posts", we give response to this request in c
 1. Redundent?
 2. Endpoint?
 3. Data base queries?
+4. DTO?
