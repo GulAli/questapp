@@ -10,7 +10,7 @@ System should push notifications.
 System should be available 7/24 with less than 1% down.
 
 /**************************************************************************
-- API Design -
+- API Endpoints -
 
 ./users                                             - Users API is an end-point that we reach all users.
 ./users/{userId}                                    - Users API is an end-point that we reach a specific user.
